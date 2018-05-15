@@ -137,6 +137,7 @@ class MotionPlanning(Drone):
                     break
         
         # TODO: set home position to (lon0, lat0, 0)
+        self.set_home_position(home[0], home[1], home[2])
 
         # TODO: retrieve current global position
  
