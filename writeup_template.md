@@ -44,7 +44,7 @@ I added (longitude, latitude) to direct the desired goal location. [Line 166](ht
 I added onto the A* implementation to include diagnoal motions on the grid that have a cost of sqrt(2). [Line 58](https://github.com/PercivalDEV/FCND-Motion-Planning/blob/d08f2ffeada62f83afc195a3b63d699de74e28c7/planning_utils.py#L58) and [Line 91](https://github.com/PercivalDEV/FCND-Motion-Planning/blob/d08f2ffeada62f83afc195a3b63d699de74e28c7/planning_utils.py#L91)
 
 #### 6. Cull waypoints 
-To prune the path of unnecessary waypoints, I implemented collinearity test and applied it to the path obtained from A* search.
+To prune the path of unnecessary waypoints, I implemented collinearity test and applied it to the path obtained from A* search. [Line 154](https://github.com/PercivalDEV/FCND-Motion-Planning/blob/8f298cfe3e5a8cf9501cb5b60fadcde3657b07f9/planning_utils.py#L154)
 
 
 
