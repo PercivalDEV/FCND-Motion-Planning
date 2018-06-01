@@ -41,10 +41,10 @@ The original code hardcoded the starting point for the planning intitial coordin
 I added (longitude, latitude) to direct the desired goal location. [Line 166](https://github.com/PercivalDEV/FCND-Motion-Planning/blob/a56a5e064f386e47a2ba4711355afd8f3943f7c1/motion_planning.py#L166)
 
 #### 5. Modify A* to include diagonal motion (or replace A* altogether)
-I updated the A* implementation to include diagnoal motions on the grid that have a cost of sqrt(2). With diagnoal motions included
+I added onto the A* implementation to include diagnoal motions on the grid that have a cost of sqrt(2). [Line 58](https://github.com/PercivalDEV/FCND-Motion-Planning/blob/d08f2ffeada62f83afc195a3b63d699de74e28c7/planning_utils.py#L58) and [Line 91](https://github.com/PercivalDEV/FCND-Motion-Planning/blob/d08f2ffeada62f83afc195a3b63d699de74e28c7/planning_utils.py#L91)
 
 #### 6. Cull waypoints 
-For this step you can use a collinearity test or ray tracing method like Bresenham. The idea is simply to prune your path of unnecessary waypoints. Explain the code you used to accomplish this step.
+To prune the path of unnecessary waypoints, I implemented collinearity test and applied it to the path obtained from A* search.
 
 
 
